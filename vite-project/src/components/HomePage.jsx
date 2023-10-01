@@ -5,26 +5,32 @@ import Slider from "./Slider";
 import Sidebar from "./Sidebar";
 import SocialMediaFeed from "./SocialMediaFeed";
 import MovieList from "./MovieList";
+import "../styles/HomePage.css";
+
 
 function HomePage() {
-    const images = ["ivern.jpg", "nautilus.jpg", "ornn.jpg"]
-    return(
+    const images = []
+    return (
         <div className="home-page">
             <Header />
             <main>
                 <div className="content">
-                    <Slider images={images} />
-                    <div className="main-content">
-                        <h1>Welcome</h1>
+                    <div className="sidebar">
+                        <Sidebar />
+                        <SocialMediaFeed />
                     </div>
-                    <Sidebar />
-                    <SocialMediaFeed />
+                    <div className="main-content">
+                    
+                    </div>
+                    <div className="right-content">
+                        <Slider images={images} />
+                        <MovieList />
+                    </div>
                 </div>
             </main>
-            <MovieList />
             <Footer />
         </div>
     )
 }
 
-export default HomePage
+export default HomePage;

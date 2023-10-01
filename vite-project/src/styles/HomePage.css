@@ -1,0 +1,22 @@
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    grid-gap: 20px; 
+}
+
+.sidebar {
+    grid-column: 2 / 3 
+}
+
+.main-content {
+    grid-column: 1 / 1; 
+}
+
+.right-content {
+    grid-column: 1 / 1; 
+}
+
+.right-content {
+    grid-row: 1 / 1; 
+}
+
