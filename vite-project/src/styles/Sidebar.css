@@ -1,30 +1,70 @@
-
+/* Default styles for screens wider than 768px (tablets and larger) */
 .sidebar {
-    padding: 8px; 
-    font-size: 14px; 
+    padding: 16px;
+    font-size: 14px;
+    width: 250px;
 }
 
+/* Styles for screens between 768px and 480px (tablets in portrait and larger phones) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .most-watched {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Styles for screens narrower than 480px (phones) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .most-watched {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Common styles for all screen sizes */
 .movie-list {
     display: flex;
     flex-direction: column;
 }
 
-.movie-item {
-    display: flex; 
-    align-items: center; 
+.most-watched {
+    text-align: left;
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    align-items: center;
     border: 1px solid #ddd;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     border-radius: 7px;
-    padding: 8px; 
-    margin-bottom: 8px; 
+    padding: 16px;
+    margin-bottom: 16px;
 }
 
-.movie-item img {
-    max-width: 80px; 
-    height: auto; 
-    margin-right: 10px; 
+.most-watched img {
+    max-width: 80px;
+    height: auto;
 }
 
-.movie-item h3 {
-    flex-grow: 1; 
+.movie-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-info h3 {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.movie-info p {
+    margin-left: 15px;
 }

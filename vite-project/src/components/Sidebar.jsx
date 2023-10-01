@@ -8,19 +8,22 @@ function Sidebar() {
             id: 1,
             title: "Movie 1",
             length: "1h 30m",
-            imageUrl: "movie1.jpg",
+            genre: "Action",
+            imageUrl: 'placeholder-poster.jpg',
         },
         {
             id: 2,
             title: "Movie 2",
             length: "2h 15m",
-            imageUrl: "movie2.jpg",
+            genre: "Drama",
+            imageUrl: 'placeholder-poster.jpg',
         },
         {
             id: 3,
             title: "Movie 3",
             length: "1h 45m",
-            imageUrl: "movie3.jpg",
+            genre: "Comedy",
+            imageUrl: 'placeholder-poster.jpg',
         },
     ];
 
@@ -29,10 +32,13 @@ function Sidebar() {
             <h2>Most Watched</h2>
             <div className="movie-list">
                 {movies.map((movie) => (
-                    <div key={movie.id} className="movie-item">
+                    <div key={movie.id} className="most-watched">
                         <img src={movie.imageUrl} alt={movie.title} />
-                        <h3>{movie.title}</h3>
-                        <p>{movie.length}</p>
+                        <div className="movie-info">
+                            <h3>{movie.title}</h3>
+                            <p>Genre: {movie.genre}</p>
+                            <p>{movie.length}</p>
+                        </div>
                     </div>
                 ))}
             </div>

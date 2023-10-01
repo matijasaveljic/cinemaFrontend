@@ -1,18 +1,26 @@
-/* Base styles for movie list */
-.movie-list {
-  padding: 10px;
-  margin-top: 15px;
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
-/* Grid layout for movies */
+.movie-list {
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+  position: relative;
+}
+
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid with a minimum column width of 250px */
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-/* Individual movie item styles */
 .movie-item {
+  width: 300px; 
+  height: 300px; 
   background-color: rgb(231, 231, 231);
   border: 1px solid #ddd;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
@@ -20,30 +28,41 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items:baseline;
-  
+  position: relative; 
 }
 
-.movie-item img {
+.movie-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.movie-image img {
   max-width: 100px;
   height: auto;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.movie-details {
+.movie-details,
+.movie-description {
   text-align: left;
+  flex-grow: 1;
 }
 
-/* Media Query for Tablets (up to 768px) */
-@media (max-width: 768px) {
-  .movie-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-  }
+.movie-description {
+  margin-top: 10px;
+  position: relative;
 }
 
-/* Media Query for Phones (up to 480px) */
-@media (max-width: 480px) {
-  .movie-grid {
-    grid-template-columns: 1fr; /* Single column for phones */
-  }
+.details-button-container {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+.details-button {
+  display: block;
+  width: 80px;
+  margin: 0 auto;
 }
