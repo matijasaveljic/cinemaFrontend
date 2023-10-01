@@ -1,0 +1,32 @@
+/* MovieList.css */
+.movie-list {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Display three columns */
+    grid-gap: 20px; /* Add gap between movie items */
+  }
+  
+  .movie-item {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .movie-item img {
+    max-width: 100px; /* Adjust image max-width */
+    height: auto;
+    margin-bottom: 10px; /* Add spacing between image and text */
+  }
+  
+  .movie-details {
+    text-align: center; /* Center text */
+  }
+  

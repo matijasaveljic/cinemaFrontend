@@ -21,7 +21,7 @@ const Slider = ({ images }) => {
       <button className="slider-button prev" onClick={prevSlide}>
         &lt;
       </button>
-      <img className="slider-image" src={images[currentIndex]} alt="Slider" />
+      <img className="slider-image" src={images[currentIndex]} alt="" />
       <button className="slider-button next" onClick={nextSlide}>
         &gt;
       </button>
