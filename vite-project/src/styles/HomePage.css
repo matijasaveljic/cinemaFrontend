@@ -1,0 +1,50 @@
+/* Base styles for your content */
+.content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .sidebar {
+    grid-column: 2 / 3;
+  }
+  
+  .main-content {
+    grid-column: 1 / 1;
+  }
+  
+  .right-content {
+    grid-column: 1 / 1;
+  }
+  
+  .right-content {
+    grid-row: 1 / 1;
+  }
+  
+  /* Media Query for Mobile Devices (up to 768px) */
+  @media (max-width: 768px) {
+    .content {
+      grid-template-columns: 1fr; /* Stack all columns on top of each other */
+      grid-template-areas: 
+        "sidebar"
+        "main-content"
+        "right-content";
+    }
+  
+    .sidebar {
+      grid-column: auto; /* Reset grid-column values */
+      grid-area: sidebar; /* Assign grid area for sidebar */
+    }
+  
+    .main-content {
+      grid-column: auto; /* Reset grid-column values */
+      grid-area: main-content; /* Assign grid area for main content */
+    }
+  
+    .right-content {
+      grid-column: auto; /* Reset grid-column values */
+      grid-area: right-content; /* Assign grid area for right content */
+    }
+  }
+  

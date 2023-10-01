@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Slider.css";
 
 const Slider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,7 +21,7 @@ const Slider = ({ images }) => {
       <button className="slider-button prev" onClick={prevSlide}>
         &lt;
       </button>
-      <img className="slider-image" src={images[currentIndex]} alt="Slider" />
+      <img className="slider-image" src={images[currentIndex]} alt="" />
       <button className="slider-button next" onClick={nextSlide}>
         &gt;
       </button>
