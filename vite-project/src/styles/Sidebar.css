@@ -1,7 +1,7 @@
-/* Sidebar.css */
+
 .sidebar {
-    padding: 8px; /* Reduced padding */
-    font-size: 14px; /* Reduced font size */
+    padding: 8px; 
+    font-size: 14px; 
 }
 
 .movie-list {
@@ -10,20 +10,21 @@
 }
 
 .movie-item {
-    display: flex; /* Use flexbox */
-    align-items: center; /* Center items vertically within each movie-item */
+    display: flex; 
+    align-items: center; 
     border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     border-radius: 7px;
-    padding: 8px; /* Reduced padding */
-    margin-bottom: 8px; /* Reduced margin */
+    padding: 8px; 
+    margin-bottom: 8px; 
 }
 
 .movie-item img {
-    max-width: 80px; /* Adjust the max-width of the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add spacing between image and text */
+    max-width: 80px; 
+    height: auto; 
+    margin-right: 10px; 
 }
 
 .movie-item h3 {
-    flex-grow: 1; /* Allow the title to take up available space */
+    flex-grow: 1; 
 }

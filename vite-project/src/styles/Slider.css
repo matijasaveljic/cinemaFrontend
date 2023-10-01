@@ -13,7 +13,7 @@
   .slider-image {
     width: 900px;
     height: 200px;
-    transition: transform 0.5s ease; /* Add a smooth transition effect for image changes */
+    transition: transform 0.5s ease; 
   }
   
   .slider-button {
@@ -26,11 +26,11 @@
     padding: 10px 20px;
     cursor: pointer;
     font-size: 24px;
-    transition: background-color 0.3s ease; /* Add a transition for button hover */
+    transition: background-color 0.3s ease; 
   }
   
   .slider-button:hover {
-    background-color: rgba(0, 0, 0, 0.6); /* Darken the button on hover */
+    background-color: rgba(0, 0, 0, 0.6); 
   }
   
   .prev {
@@ -40,6 +40,26 @@
   .next {
     right: 10px;
   }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider-container {
+    top: 10px;
+  }
   
-  /* Optional: Add additional styles for the buttons (e.g., border-radius, box-shadow) */
+  .slider-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider-container {
+    top: 5px;
+  }
+
+  .slider-button {
+    font-size: 18px;
+  }
+}
   

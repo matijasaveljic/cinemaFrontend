@@ -1,4 +1,4 @@
-/* Header.css */
+/* Base styles for header */
 .header {
   background-color: #333;
   color: white;
@@ -19,13 +19,13 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-items: center; /* Vertically center the content */
+  align-items: center;
 }
 
 .header-logo {
   width: 40px;
   height: 40px;
-  margin-left: 20px; /* Add space to the left of the logo */
+  margin-left: 20px;
 }
 
 .navigation ul {
@@ -36,7 +36,7 @@
 }
 
 .navigation li {
-  margin-right: 20px; /* Add space to the right of each button */
+  margin-right: 20px;
   transition: transform 0.2s;
 }
 
@@ -49,4 +49,48 @@
 
 .navigation li:hover {
   transform: scale(1.1);
+}
+
+/* Media Query for Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .header {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    height: 50px;
+  }
+  
+  .header-logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+  }
+  
+  .navigation li {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Phones (up to 480px) */
+@media (max-width: 480px) {
+  .header {
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    height: 40px;
+  }
+  
+  .header-logo {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  .navigation li {
+    margin-right: 10px;
+    font-size: 12px;
+  }
 }
