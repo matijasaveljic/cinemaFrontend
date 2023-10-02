@@ -1,0 +1,10 @@
+.movies-page {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+.content {
+    margin-top: 70px;
+    
+}

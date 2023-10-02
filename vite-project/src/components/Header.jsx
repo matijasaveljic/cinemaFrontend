@@ -1,16 +1,15 @@
 import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/Header.css";
 
 function Header() {
   return (
-    <BrowserRouter>
-        <header className="header">
+    <header className="header">
       <div className="container">
         <div className="header-content">
           <div className="header-left">
             <img
-              src="plogo-placeholder-image.png"
+              src="logo-placeholder-image.png"
               alt="Logo"
               className="header-logo"
             />
@@ -22,10 +21,10 @@ function Header() {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/movies">Movies</Link>
+                  <Link to="/MoviesPage">Movies</Link>
                 </li>
                 <li>
-                  <Link to="/about">About</Link>
+                  <Link to="/About">About</Link>
                 </li>
                 <li>
                   <Link to="/profile">Profile</Link>
@@ -36,7 +35,6 @@ function Header() {
         </div>
       </div>
     </header>
-    </BrowserRouter>
   );
 }
 
