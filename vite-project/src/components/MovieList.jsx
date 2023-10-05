@@ -1,7 +1,10 @@
-import React from 'react';
-import "../styles/MovieList.css";
+import React, { useState } from 'react';
+import '../styles/MovieList.css';
+import MovieWindow from './MovieWindow';
 
 function MovieList() {
+  const [selectedMovie, setSelectedMovie] = useState(null);
+
   const movies = [
     {
       title: 'Movie 1',
@@ -9,7 +12,9 @@ function MovieList() {
       year: 2020,
       duration: '2h 15m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'A thrilling action movie about...'
+      description: 'A thrilling action movie about...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'curent'
     },
     {
       title: 'Movie 2',
@@ -17,7 +22,9 @@ function MovieList() {
       year: 2019,
       duration: '1h 45m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'A hilarious comedy that will make you laugh...'
+      description: 'A hilarious comedy that will make you laugh...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'curent',
     },
     {
       title: 'Movie 3',
@@ -25,7 +32,9 @@ function MovieList() {
       year: 2021,
       duration: '2h 30m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'An emotional drama that will tug at your heartstrings...'
+      description: 'An emotional drama that will tug at your heartstrings...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'arhived',
     },
     {
       title: 'Movie 4',
@@ -33,7 +42,9 @@ function MovieList() {
       year: 2018,
       duration: '2h 10m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'An epic science fiction adventure in a distant galaxy...'
+      description: 'An epic science fiction adventure in a distant galaxy...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'arhived',
     },
     {
       title: 'Movie 5',
@@ -41,7 +52,9 @@ function MovieList() {
       year: 2022,
       duration: '1h 55m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'A spine-tingling horror experience that will haunt your dreams...'
+      description: 'A spine-tingling horror experience that will haunt your dreams...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'coming soon',
     },
     {
       title: 'Movie 6',
@@ -49,9 +62,19 @@ function MovieList() {
       year: 2021,
       duration: '2h 20m',
       imageUrl: 'placeholder-poster.jpg',
-      description: 'An exciting adventure in search of hidden treasures...'
+      description: 'An exciting adventure in search of hidden treasures...',
+      youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
+      status: 'coming soon',
     },
   ];
+
+  const openMovieWindow = (movie) => {
+    setSelectedMovie(movie);
+  };
+
+  const closeMovieWindow = () => {
+    setSelectedMovie(null);
+  };
 
   return (
     <div className="movie-list">
@@ -73,15 +96,20 @@ function MovieList() {
             <div className="movie-description">
               <p>{movie.description}</p>
               <div className="details-button-container">
-                <button className="details-button">Details</button> {/* "Details" button under the description */}
+                <button className="details-button" onClick={() => openMovieWindow(movie)}>
+                  Details
+                </button>
               </div>
             </div>
           </div>
         ))}
       </div>
+
+      {selectedMovie && (
+        <MovieWindow movie={selectedMovie} onClose={closeMovieWindow} />
+      )}
     </div>
   );
 }
-
 
 export default MovieList;
