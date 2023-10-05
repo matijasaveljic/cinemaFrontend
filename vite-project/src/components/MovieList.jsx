@@ -14,7 +14,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'A thrilling action movie about...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'curent'
+      status: 'Current'
     },
     {
       title: 'Movie 2',
@@ -24,7 +24,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'A hilarious comedy that will make you laugh...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'curent',
+      status: 'Current',
     },
     {
       title: 'Movie 3',
@@ -34,7 +34,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'An emotional drama that will tug at your heartstrings...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'arhived',
+      status: 'Archived',
     },
     {
       title: 'Movie 4',
@@ -44,7 +44,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'An epic science fiction adventure in a distant galaxy...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'arhived',
+      status: 'Archived',
     },
     {
       title: 'Movie 5',
@@ -54,7 +54,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'A spine-tingling horror experience that will haunt your dreams...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'coming soon',
+      status: 'Upcoming',
     },
     {
       title: 'Movie 6',
@@ -64,7 +64,7 @@ function MovieList() {
       imageUrl: 'placeholder-poster.jpg',
       description: 'An exciting adventure in search of hidden treasures...',
       youtubeTrailerLink: 'https://www.youtube.com/watch?v=your-trailer-link-2',
-      status: 'coming soon',
+      status: 'Upcoming',
     },
   ];
 

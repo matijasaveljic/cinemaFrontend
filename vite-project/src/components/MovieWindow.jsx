@@ -4,8 +4,8 @@ import YouTube from 'react-youtube';
 
 function MovieWindow({ movie, onClose }) {
   const youtubeOpts = {
-    height: '360',
-    width: '640',
+    height: '100%', // Set the height to 100% of the parent container (MovieWindow)
+    width: '100%', // Set the width to 100% of the parent container (MovieWindow)
     playerVars: {
       autoplay: 0,
     },
@@ -29,11 +29,6 @@ function MovieWindow({ movie, onClose }) {
             <p>Year: {movie.year}</p>
             <p>Duration: {movie.duration}</p>
             <p>Description: {movie.description}</p>
-            <p>
-              <a href={movie.youtubeTrailerLink} target="_blank" rel="noopener noreferrer">
-                Watch Trailer
-              </a>
-            </p>
           </div>
         </div>
         <div className="youtube-video">

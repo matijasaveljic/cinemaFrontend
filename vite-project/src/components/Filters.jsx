@@ -13,7 +13,7 @@ function Filters({
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = () => {
-    onSearch(searchQuery);
+    onSearch(searchQuery, selectedGenre, selectedDuration, selectedStatus);
   };
 
   return (
@@ -48,6 +48,12 @@ function Filters({
           <label className='labels'>Genre:</label>
           <select value={selectedGenre} onChange={(e) => setSelectedGenre(e.target.value)}>
             <option value="All">All</option>
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Horror">Horror</option>
+            <option value="Science-Fiction">Science Fiction</option>
             {/* Add genre options */}
           </select>
         </div>
@@ -60,6 +66,11 @@ function Filters({
             <option value="Current">Current</option>
             <option value="Upcoming">Upcoming</option>
           </select>
+        </div>
+        
+        {/* Add "Apply Filters" button */}
+        <div className="apply-filters-button">
+          <button onClick={handleSearch}>Apply Filters</button>
         </div>
       </div>
     </div>
