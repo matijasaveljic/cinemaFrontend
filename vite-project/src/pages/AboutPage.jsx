@@ -8,7 +8,7 @@ function AboutPage() {
       <div className="about-content">
         <div className="cinema-details">
           <div className="cinema-image">
-            <img src="cinema-image.jpg" alt="Cinema Building" />
+            <img src="cinema-photo.jpeg" alt="Cinema Building" />
           </div>
           <div className="cinema-info">
             <h2>Cinema Name</h2>
