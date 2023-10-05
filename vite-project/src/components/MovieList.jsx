@@ -55,7 +55,7 @@ function MovieList() {
 
   return (
     <div className="movie-list">
-      <h2>Movie List</h2>
+      <h1>Movie List</h1>
       <div className="movie-grid">
         {movies.map((movie, index) => (
           <div key={index} className="movie-item">

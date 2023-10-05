@@ -14,24 +14,30 @@ function Header() {
               className="header-logo"
             />
           </div>
-          <nav className="navigation">
-            <div className="nav-buttons">
-              <ul>
-                <li>
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="/MoviesPage">Movies</Link>
-                </li>
-                <li>
-                  <Link to="/About">About</Link>
-                </li>
-                <li>
-                  <Link to="/profile">Profile</Link>
-                </li>
-              </ul>
+          <div className="header-right">
+            <nav className="navigation">
+              <div className="nav-buttons">
+                <ul>
+                  <li>
+                    <Link to="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link to="/MoviesPage">Movies</Link>
+                  </li>
+                  <li>
+                    <Link to="/About">About</Link>
+                  </li>
+                  <li>
+                    <Link to="/profile">Profile</Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div className="search-bar">
+              <input type="text" placeholder="Search" />
+              <button type="submit">Search</button>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
     </header>

@@ -1,10 +1,30 @@
 .movies-page {
     height: 100vh; /* 100% of the viewport height */
     display: flex;
+    text-align: center;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
 }
 .content {
-    margin-top: 70px;
-    
-}
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .sidebar {
+    grid-column: 2 / 3;
+    margin-top: 25px;
+  }
+  
+  .main-content {
+    grid-column: 1 / 1;
+  }
+  
+  .right-content {
+    grid-column: 1 / 1;
+  }
+  
+  .right-content {
+    grid-row: 1 / 1;
+  }

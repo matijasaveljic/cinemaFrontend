@@ -1,0 +1,56 @@
+/* Apply border to the entire Filters component */
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(231, 231, 231);
+  border: 1px solid #ddd;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 7px;
+  width: 290px;
+  padding: 15px; /* Increase the padding for more space from the border */
+}
+
+.filters .filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; /* Increase the margin for more space between groups */
+}
+
+.filters .labels {
+  font-size: 20px;
+  margin-right: 15px; /* Increase the margin for more space from the label */
+}
+
+/* Style for select elements */
+.filters select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px; /* Add margin to the top for more space */
+}
+
+/* Style the search input and button together */
+.filters .filter-group .search-input {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Add margin to the top for more space */
+}
+
+.filters input[type="text"] {
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  flex-grow: 1;
+}
+
+.filters input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.filters button {
+  margin-left: 10px;
+  padding: 8px 12px; /* Add padding to the button for more space */
+}

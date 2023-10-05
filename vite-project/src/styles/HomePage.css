@@ -22,4 +22,10 @@
     grid-row: 1 / 1;
   }
   
+  .sidebar {
+    padding: 16px;
+    font-size: 14px;
+    width: 250px;
+}
+
   
