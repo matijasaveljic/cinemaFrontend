@@ -7,7 +7,7 @@
   padding: 16px;
   margin-bottom: 16px;
   display: flex;
-  flex-direction: column; /* Added this to arrange elements vertically */
+  flex-direction: column; 
 
   h2 {
     font-size: 24px;

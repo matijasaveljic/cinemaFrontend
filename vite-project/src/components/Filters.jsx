@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import '../styles/Filters.css';
 
 function Filters({
-  selectedGenre,
-  setSelectedGenre,
-  selectedDuration,
-  setSelectedDuration,
-  selectedStatus,
-  setSelectedStatus,
-  onSearch,
+  onFilterChange,
 }) {
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedGenre, setSelectedGenre] = useState('All');
+  const [selectedDuration, setSelectedDuration] = useState(0);
+  const [selectedStatus, setSelectedStatus] = useState('All');
 
   const handleSearch = () => {
-    onSearch(searchQuery, selectedGenre, selectedDuration, selectedStatus);
+    onFilterChange({
+      searchQuery,
+      selectedGenre,
+      selectedDuration,
+      selectedStatus,
+    });
   };
 
   return (
@@ -46,7 +48,10 @@ function Filters({
 
         <div className="filter-group">
           <label className='labels'>Genre:</label>
-          <select value={selectedGenre} onChange={(e) => setSelectedGenre(e.target.value)}>
+          <select
+            value={selectedGenre}
+            onChange={(e) => setSelectedGenre(e.target.value)}
+          >
             <option value="All">All</option>
             <option value="Drama">Drama</option>
             <option value="Action">Action</option>
@@ -60,7 +65,10 @@ function Filters({
 
         <div className="filter-group">
           <label className='labels'>Status:</label>
-          <select value={selectedStatus} onChange={(e) => setSelectedStatus(e.target.value)}>
+          <select
+            value={selectedStatus}
+            onChange={(e) => setSelectedStatus(e.target.value)}
+          >
             <option value="All">All</option>
             <option value="Archived">Archived</option>
             <option value="Current">Current</option>

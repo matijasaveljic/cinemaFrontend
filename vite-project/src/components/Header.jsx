@@ -33,10 +33,6 @@ function Header() {
                 </ul>
               </div>
             </nav>
-            <div className="search-bar">
-              <input type="text" placeholder="Search" />
-              <button type="submit">Search</button>
-            </div>
           </div>
         </div>
       </div>

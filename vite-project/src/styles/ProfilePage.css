@@ -1,65 +1,70 @@
-
 .profile-page {
-    margin-top: 100px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    padding: 20px;
-  }
-  
-  .profile-content {
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .user-details {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-  }
-  
-  .user-image img {
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover;
-    border-radius: 50%; 
-    margin-right: 20px;
-  }
-  
-  .user-info {
-    flex: 1;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  strong {
-    font-weight: bold;
-  }
-  
-  .user-description {
-    padding: 20px 0;
-  }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-  }
+  margin-top: 100px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.profile-content {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-details {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.user-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.user-description {
+  padding: 20px 0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+/* Style for the Log Out button */
+.logout-button {
+  float: right; /* Float the button to the right */
+  margin-left: 10px; /* Add a small margin for spacing */
+}

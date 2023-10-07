@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .header {
   background-color: #333;
   color: white;
@@ -28,7 +29,7 @@
 .header-logo {
   width: 55px;
   height: 55px;
-  margin-right: 850px;
+  margin-right: 20px;
 }
 
 .header-right {
@@ -59,27 +60,46 @@
   transform: scale(1.1);
 }
 
-.search-bar {
-  display: flex;
-  align-items: center;
+/* Media query for tablets */
+@media (max-width: 768px) {
+  .header {
+    height: 50px;
+    padding: 10px;
+  }
+
+  .header-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .navigation li {
+    margin-right: 15px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+  }
 }
 
-.search-bar input[type="text"] {
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-  margin-right: 10px;
-}
+/* Media query for phones */
+@media (max-width: 480px) {
+  .header {
+    height: 40px;
+    padding: 5px;
+  }
 
-.search-bar button[type="submit"] {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
+  .header-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
 
-.search-bar button[type="submit"]:hover {
-  background-color: #0056b3;
+  .navigation li {
+    margin-right: 10px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
 }
